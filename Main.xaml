@@ -1,0 +1,234 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="889,2861" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="64">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Check div" sap:VirtualizedContainerService.HintSize="604,2796" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="browser" />
+      <Variable x:TypeArguments="x:Int32" Name="cnt" />
+      <Variable x:TypeArguments="x:Boolean" Name="isButtonEnable" />
+      <Variable x:TypeArguments="x:Int32" Name="maxIterations" />
+      <Variable x:TypeArguments="x:String" Name="countRows" />
+      <Variable x:TypeArguments="x:String" Name="checkListCntJs" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Edge" sap:VirtualizedContainerService.HintSize="562,392" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[browser]" ScopeGuid="42dec445-1cd6-45bf-95d0-3fea28e6730d" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,175" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="334,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://freelance.habr.com/tasks" Version="V1" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="971, 499, 945, 1020" BrowserType="Edge" IconBase64="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" InformativeScreenshot="97b4a605f17cf20f9a0264e05baa95be.png" Selector="&lt;html app='msedge.exe' omit:url='' /&gt;" Url="[String.Empty]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:MultipleAssign DisplayName="Set iterate state" sap:VirtualizedContainerService.HintSize="562,131" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:Int32">[cnt]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:Int32">0</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:Int32">[maxIterations]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:Int32">4</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <Assign DisplayName="Set false state" sap:VirtualizedContainerService.HintSize="562,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Boolean">[isButtonEnable]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ReadTextFile File="{x:Null}" Content="[checkListCntJs]" DisplayName="Read js" Encoding="UTF-8" FileName="JS\GetListCount.js" sap:VirtualizedContainerService.HintSize="562,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="562,1591" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+      <ui:InterruptibleWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,1424" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Delay DisplayName=" Delay 3 second" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+          <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="484,461" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="[browser]" OpenMode="Never" ScopeGuid="87fc2926-15cc-4e1a-ba77-415ad60a203f" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,324" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NInjectJsScript InputParameter="{x:Null}" DisplayName="Inject Js Script" sap:VirtualizedContainerService.HintSize="334,231" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" InUiElement="[browser]" ScriptCode="[checkListCntJs]" Version="V1">
+                    <uix:NInjectJsScript.ScriptOutput>
+                      <OutArgument x:TypeArguments="x:String">[countRows]</OutArgument>
+                    </uix:NInjectJsScript.ScriptOutput>
+                  </uix:NInjectJsScript>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+          <If Condition="[CINT(countRows) &gt;25]" DisplayName="If compare rows count" sap:VirtualizedContainerService.HintSize="484,536" sap2010:WorkflowViewState.IdRef="If_2">
+            <If.Then>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,347" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign DisplayName="Set to true" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Boolean">[isButtonEnable]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Counter - &quot; + cnt.ToString() + &quot;  is enabled! &quot;]" />
+                <ui:Break sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Break_1" />
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
+            </If.Else>
+          </If>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,93" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Counter - &quot; + cnt.ToString() + &quot;  is enabled - &quot; + isButtonEnable.ToString()]" />
+          <Assign DisplayName="+1" sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[cnt]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[cnt + 1]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </ui:InterruptibleWhile.Body>
+      <ui:InterruptibleWhile.Condition>
+        <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="isButtonEnable = False And cnt &lt; maxIterations" />
+      </ui:InterruptibleWhile.Condition>
+    </ui:InterruptibleWhile>
+    <If Condition="[cnt  &gt; maxIterations]" DisplayName="If time end" sap:VirtualizedContainerService.HintSize="562,250" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Throw Exception="[new SystemException]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
+      </If.Then>
+      <If.Else>
+        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>
